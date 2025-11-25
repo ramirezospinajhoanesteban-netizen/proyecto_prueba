@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'popins',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.2);
+    transform: scaleX(-1);
+    margin-bottom: -180px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.menu .menu_img{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    margin-left: 500px;
+}
+
+.menu_img img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+header{
+    height: 90vh;
+    background-image: url(../img/teams/image1.png);
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%,50% 100%, 0 85%);
+    transform: scaleX(-1);
+}
+
+.banner{
+    text-align: center;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(-1);
+}
+
+.banner h1{
+    font-size: 56px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.banner button{
+    padding:15px 40px ;
+    font-size: 18px;
+    background-color: #0057ff;
+    color: white;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 25px;
+    width: auto;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.banner button:hover{
+    background-color: #0042a8;
+    transform: translateY(-2px)
+}
+
+/* contenedor */
+
+.section1{
+  padding: 60px 20px;
+  text-align: center;
+  color:#333;
+  background-color: #fff;
+}
+
+.section1 h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.section1 p{
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    
+}
+
+.section1 .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+
+/* .section1 .buttons1{
+    margin: 5px;
+    padding: 56px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0057ff;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    width: 205px;
+} */
+
+.section1 .buttons1,.section1 .buttons2, .section1 .buttons3{
+    padding: 40px 35px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0057ff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.section1 .buttons1:hover,
+.section1 .buttons2:hover,
+.section1 .buttons3:hover {
+    background-color: #0042a8;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 87, 255, 0.4);
+}
+
+/*galeria*/
+
+.gallery{
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section2{
+    text-align: center;
+    width: 100%;
+}
+
+.gallery{
+    padding: 30px;
+}   
+
+.gallery img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*contenido*/
+
+#information{
+    padding: 80px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#information>div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+#information img{
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#information h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#information p{
+    font-size: 16px;
+    color:#666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
